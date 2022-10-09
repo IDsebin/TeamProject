@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사용자 설정</title>
+  <style>
+     .box{
+      border-bottom: 2px solid black;
+      padding: 5px 5px;
+     }
+
+      header#header { 
+        pointer-events: none;
+        line-height: 2px;
+        padding: 40px 50px;
+        text-align: center;
+      }
+      a { 
+        text-decoration: none; 
+        color: black;
+        padding: 10px 10px;
+        line-height: 50px;
+        
+      }
+      
+     li{
+      list-style: none;
+     }
+
+  .wrapper {
+  width: auto;
+  height: auto;
+  text-align: right;
+  margin: 0px auto;
+  transform: translate(0%, -120%);
+  }
+  #switch {
+    position: absolute;
+    /* hidden */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .switch_label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 58px;
+    height: 28px;
+    background: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: 0.2s;
+  }
+  .switch_label:hover {
+    background: #efefef;
+  }
+  .onf_btn {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: rgb(0, 0, 0);
+    transition: 0.2s;
+  }
+
+  /* checking style */
+  #switch:checked+.switch_label {
+    background: white;
+    border: 2px solid black;
+  }
+
+  #switch:checked+.switch_label:hover {
+    background: gainsboro;
+  }
+
+  /* move */
+  #switch:checked+.switch_label .onf_btn {
+    left: 34px;
+    background: rgb(0, 0, 0);
+    box-shadow: 1px 2px 3px #91909020;
+  }
+</style>
+
+</head>
+<body>
+  <div class="wrap">
+    <header id="header">
+      <h1>사용자 설정</h1>
+    </header>
+    <nav id = "nav">
+      <div>
+        <ul>
+          <li  class = "box"> <a href="#">알림음 설정<i class='fa fa-angle-down'></i></a>
+          <li class = "box"> <a href="#">자동 알람<i class='fa fa-angle-down'></i></a>
+            <ul>
+              <div class="wrapper">
+                <input type="checkbox" id="switch">
+                <label for="switch" class="switch_label">
+                 <span class="onf_btn"></span>
+                </label>
+              </div>
+            </ul>
+          <li class = "box"> <a href="#">언어 설정<i class='fa fa-angle-down'></i></a>
+          <li class = "box"> <a href="#">목적지 알림이 가이드<i class='fa fa-angle-down'></i></a>
+          <li class = "box"> <a href="#">도움말<i class='fa fa-angle-down'></i></a>
+          <li class = "box"> <a href="#">내 데이터 통계<i class='fa fa-angle-down'></i></a>
+          <li class = "box"> <a href="#">사용기록 전체 삭제<i class='fa fa-angle-down'></i></a>
+          <ul>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>

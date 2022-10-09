@@ -1,0 +1,75 @@
+/*
+������ ��Ʈ 
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding: 100px;
+    background: whitesmoke;
+    display: table-cell;
+}
+
+.TopFrame { 
+    border: 3px solid brown;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.MainBox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    
+}
+
+/*��ư�׷�&��ư*/
+
+.Btn {
+    margin-top: 50px;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: larger;
+    transition: 0.25s;
+}
+
+.brown {
+    background-color: #ce6d39;
+    color: #ffeee4;
+    width: 85%
+}
+
+/*�̹��� ��Ʈ*/
+.image {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+/*���� ��Ʈ*/
+/*�ϴ� ������ ���·� ȭ�� ũ�Ⱑ �ٲ� �ϴܿ� ����*/
+.commercial {
+    position: fixed;
+    bottom: 0px; 
+    left: 0px; 
+    width: 100%; 
+    height: 100px; 
+    z-index:100; 
+    border-top: 1px solid black; 
+    background-color: white
+}
